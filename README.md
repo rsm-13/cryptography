@@ -5,12 +5,11 @@ Cryptography &amp; Cipher Algorithms for Encryption &amp; Decryption
 This project involved experimentation with various cryptographical encryption and decryption methods. Starting with medieval techniques with the Caesar cipher and Vigenère cipher, different algorithms were created for encrypting plaintext with these ciphers as well as writing programs to break them using statistical analysis with the chi-square test or Kasiski method. Other monoalphabetic substitution-related functions were created and can be viewed in ```mascMasterCode.py```. Repo includes a frequency analysis algorithm, a famous monoalphabetic substitution codebreaking technique created by cryptanalyst al-Kindī in 19th Century Arabia. Other files include a mock-up of an enigma machine (famously used during WWII), a version of the OTP cipher (one-time pass, also known as the vernam cipher), and a basic RSA algorithm which implements the modern idea of public-key cryptography in internet security.
 
 ## **Files**
-- ```ADFGVX_cipher.py```
-  * A transposition field-cipher used during WWI by the Imperial German Army. The cipher is given its named after the fact that 'ADFGVX' are the only letters which appear in the ciphertext. The program completes basic encryption via the polybius square and then converts it into morse code for a second layer of protection.
-
 
 - ```Evolution of Ancient and Medieval Ciphers [Research Paper].pdf```
   * Wrote a research paper about the evolution of ancient and medieval ciphers – specifically with regards ancient European and Arabic cryptographic methods.
+- ```ADFGVX_cipher.py```
+  * A transposition field-cipher used during WWI by the Imperial German Army. The cipher is given its named after the fact that 'ADFGVX' are the only letters which appear in the ciphertext. The program completes basic encryption via the polybius square and then converts it into morse code for a second layer of protection.
 - ```caesarCipher.py```
   * Very basic caesar cipher encryption / decryption tool (if shift is known). If shift is unknown, brute-force technique can be implemented, providing 26 outputs, each with a different caesar shift.
 - ```caesarMasc.py```

@@ -126,7 +126,7 @@ def decrypt_baud(text,keystream):   #Decrypting Vernam
 def main(): #Vernam Main
     #Asking whether to encrypt or decrypt & uploading "random" key
     choice = int(input('Would you like to encrypt & send a message, or decrypt a received file?\n[1] encrypt\n[2] decrypt\n'))
-    #key = uploadFile('/Users/radhamunver/Desktop/School/HighSchool/Computer_Science/9_Cryptography/key1.txt')
+    #key = uploadFile(filepath)
     key = '100101010000001011111001000000000100101010000001011111001000000000100101010000001011111001000000000100101010000001011111001000000000100101010000001011111001000000000'
 
     if choice == 1: # Encrypt with Vernam
@@ -134,7 +134,7 @@ def main(): #Vernam Main
         final = crypt_baud(encode_pt(text),key)
         
     elif choice == 2: # Decrypt
-        #text = uploadFile('/Users/radhamunver/Desktop/School/HighSchool/Computer_Science/9_Cryptography/gv.txt')
+        #text = uploadFile(filepath)
         text = str(input("Input the encrypted bits here. Use only 0\'s and 1\'s and no spaces."))
         final = decrypt_baud(text,key)
     
